@@ -161,24 +161,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// $result = add_role(
-// 	'basic_contributor'	,
-// 	__( 'Basic Contributor' ),
-// 	array(
-// 		'read'			=> 	true, 	// true allows this capability
-// 		'edit_posts' 	=> 	true,
-// 		'delete_posts'	=>	false,	// Use false to explicitly deny
-// 		'customize'		=> 	true,
-// 	)
-// );
-
-remove_role( 'basic_contributor' );
-remove_role( 'candp' );
-remove_role( 'candpOne' );
-remove_role( 'candpTwo' );
-remove_role( 'candpThree' );
-remove_role( 'candpFour' );
-
 $result = add_role(
 	'candpFive'	,
 	__( 'CandPFive' ),
